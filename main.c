@@ -1,6 +1,6 @@
 /****************************************************
-Project 1: Scanner for C-
-Borce Gjorgjievski
+(c) Bruce Gjorgjievski
+Scanner for C- (implementation C/Lex)
 main.c
 Main testing module
 ****************************************************/
