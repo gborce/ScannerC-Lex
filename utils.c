@@ -1,5 +1,5 @@
 /****************************************************
-Borce Gjorgjievski
+Bruce Gjorgjievski
 Scanner for C- (implementation C/Lex)
 utils.c
 misc utilities
