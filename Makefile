@@ -1,6 +1,6 @@
 ##############################################################
-# 	Compilers, Project 1: Scanner for C- 
-#	Makefile, Borce Gjorgjievski
+# 	Scanner for C- (implementation C/Lex)
+#	Makefile, Bruce Gjorgjievski
 ##############################################################
 
 LIBS    = -lfl
