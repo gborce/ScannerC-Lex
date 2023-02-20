@@ -1,6 +1,6 @@
 /****************************************************
 Borce Gjorgjievski
-Compilers, Project 1, Scanner for C-
+Scanner for C- (implementation C/Lex)
 utils.c
 misc utilities
 ****************************************************/
