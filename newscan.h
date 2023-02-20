@@ -1,6 +1,6 @@
 /**************************************************** 
 Scanner for C- (implementation C/Lex)
-Borce Gjorgjievski
+Bruce Gjorgjievski
 newscan.h
 Global definitions 
 ****************************************************/
