@@ -1,5 +1,5 @@
 /**************************************************** 
-Project 1: Scanner for C-
+Scanner for C- (implementation C/Lex)
 Borce Gjorgjievski
 newscan.h
 Global definitions 
