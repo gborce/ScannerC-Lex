@@ -2,7 +2,7 @@
 Scanner for C-
 (c) Bruce Gjorgjievski
 langdef.l
-Language Definitions
+C- Language Definitions
 ****************************************************/
 
 %{
