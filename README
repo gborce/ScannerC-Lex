@@ -1,0 +1,20 @@
+***************************************************
+	(c) Borce Gjorgjievski
+	Scanner for C- Language with Lex
+**************************************************
+
+	This scanner scans the expanded version of the C- language ( Louden ) 
+
+	All custom definitions in newscan.h.  The file scan.h in its original form is also called from each module.
+
+	initScanner initializes the input file, the counters, and the anchor first element of the linked list (start) which is used only for simplifying traversing the list (it contains NULL in its node field so it cannot be matched with any future ID)
+
+	Nested comments are handled by entering a lex sub-block whenever a /* is encountered .  The sub-block counts the level of nested(ness) and sets the nestedErr to TRUE if there are more /* or more *\ then than its complement.  A *\ by itself would get reported as two ERROR tokens.  Opening a comment and not closing it would cause the rest of the program to be treated as a comment and returning a nestedErr=TRUE.
+
+	Character values are matched by a lex regular expression and then analyzed in the getToken() function.  CHARVALs can be at most of length 2 in which case the first char needs to be \ .  If the first char is \, the second must be one of the special chars. This is taken care of already in the lex regular expression, so getToken() should not see such case and hence a CHARVAL with CHARVALerr in the spell field should never be returned.  The lex expression will pass only valid char values to the getToken().
+
+	Strings are matched by a regular expression and then analyzed in getToken(). It is first checked if the string is not a NULL string (if it is NULL spell is returned) and then a loop checks for escaped characters.  Every escaped character is converted to its ascii equivalent and counted in the skip variable. Unescaped special characters will not occur since that is taken care of in the lex regular expression, hence STRING token with spell set to STRINGerr should never be returned.
+
+	Identifiers are matched with a regular expression and then analyzed in getToken().  All distinct identifier names are kept in a single linked list anchored at start.  The list is checked for each new identifier and if if the name is already present in the list, the new identifier get the same address and not be duplicated ).  If the identifier wasn't found (found = FALSE) the a new node is added to the list and the spell is made to point to this node.  A loop at the end of main prints the complete list for verification.
+
+	The test/example files of C- Language used are the ones with *.c- extension.

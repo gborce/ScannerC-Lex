@@ -1,0 +1,9 @@
++if else while return int char void
+identifiering
+/* this is /* a triple /* nested */ valid */comment */
+= == < > <= >= != + - * / ( ) { } [ ] ; ,
+another identifier number 321 
+"simplestring"
+123
+'C'
+

@@ -1,2 +1,2 @@
 # ScannerC-Lex
- Compiler Scanner implementration in C and Lex
+ Compiler Scanner implementation in C and Lex
